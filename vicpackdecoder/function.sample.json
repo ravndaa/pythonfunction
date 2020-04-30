@@ -1,0 +1,21 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "",
+      "connection": "IOTHUB",
+      "cardinality": "one",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "eventHub",
+      "name": "$return",
+      "eventHubName": "",
+      "connection": "MyEventHubSendAppSetting",
+      "direction": "out"
+    }
+  ]
+}
