@@ -15,4 +15,4 @@ def main(event: func.EventHubEvent) -> str:
 
     print(pack)
     print(pack.export ())
-    return '{"temp":"10"}'
+    return "{}".format(pack.export())
